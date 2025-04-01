@@ -1,33 +1,42 @@
 // Sample image data with URLs, captions, and favorite status
+// At the top of your script.js file, add this line
+console.log('Script loaded!');
+
+// And update your theme toggle function to log when clicked
+function toggleTheme() {
+    console.log('Theme toggle clicked!');
+    document.body.classList.toggle('dark-mode');
+}
+// Sample image data with URLs, captions, and favorite status
 const imageData = [
     {
-        url: 'https://source.unsplash.com/random/800x600/?nature',
-        caption: 'Beautiful nature landscape',
+        url: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg',
+        caption: 'Sunset landscape with tree',
         isFavorite: true
     },
     {
-        url: 'https://source.unsplash.com/random/800x600/?city',
-        caption: 'Urban cityscape',
+        url: 'https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg',
+        caption: 'Night sky with stars',
         isFavorite: false
     },
     {
-        url: 'https://source.unsplash.com/random/800x600/?food',
-        caption: 'Delicious cuisine',
+        url: 'https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg',
+        caption: 'Spring flowers bloom',
         isFavorite: true
     },
     {
-        url: 'https://source.unsplash.com/random/800x600/?animals',
-        caption: 'Wildlife photography',
+        url: 'https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_1280.jpg',
+        caption: 'Mountain landscape panorama',
         isFavorite: false
     },
     {
-        url: 'https://source.unsplash.com/random/800x600/?technology',
-        caption: 'Modern technology',
+        url: 'https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg',
+        caption: 'Forest road in autumn',
         isFavorite: true
     },
     {
-        url: 'https://source.unsplash.com/random/800x600/?architecture',
-        caption: 'Impressive architecture',
+        url: 'https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg',
+        caption: 'Tree-lined avenue',
         isFavorite: false
     }
 ];
